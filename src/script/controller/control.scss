@@ -1,0 +1,93 @@
+html {
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(27, 28, 29) !important;
+}
+
+#oframes {
+  display: flex;
+  flex-direction: column;
+}
+
+.botpair, .bots .bot {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.botpair .bots, .botpair .controls {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.botpair video {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+body input.supercheckbox[type=checkbox]:checked {
+  filter: hue-rotate(347deg) saturate(5);
+  transform: scale(1.5);
+  opacity: 1 !important;
+}
+
+.controlGroup {
+  border: 1px solid white !important;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.ui.checkbox label {
+  color: inherit !important;
+  margin-right: 4px;
+}
+
+.controlFlex {
+  display: flex;
+  flex-direction: column;
+  height: 600px;
+  align-content: space-between;
+}
+
+.control {
+  display: flex;
+  flex-direction: row;
+}
+
+.mediainput {
+  position: absolute !important;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  width: 50%;
+  background-color: #000 !important;
+
+  display: flex;
+
+  & .group {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.b-chat {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  max-height: 100px;
+  overflow: auto;
+  color: grey;
+}
+
+.ui.segment {
+  margin: 0 0 !important;
+}

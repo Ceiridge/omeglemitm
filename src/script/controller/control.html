@@ -1,0 +1,94 @@
+<div class="controlFlex">
+	<div class="ui segment inverted controlGroup">
+		<h4 class="ui header">Actions</h4>
+
+		<button class="ui button primary b-next-btn">Next</button>
+		<button class="ui button b-stop-btn">Stop</button>
+		<button class="ui button b-source-pip-btn">Unfiltered Source PIP</button>
+		<button class="ui button b-reset-btn">Full Reset</button>
+		<button class="ui button b-rid-btn">New ID (Omegle)</button>
+
+		<div class="ui input">
+			<input type="text" placeholder="Country Code" class="b-country-code"/>
+			<input type="text" placeholder="Interests (Comma separated)" class="b-interests"/>
+		</div>
+
+		<div class="ui checkbox">
+			<input type="checkbox" class="b-frame-debug"/>
+			<label>Show Debug Frame</label>
+		</div>
+
+		<div class="ui checkbox">
+			<input type="checkbox" class="b-record"/>
+			<label>Record to file</label>
+		</div>
+
+		<div class="ui checkbox">
+			<input type="checkbox" class="b-catchee"/>
+			<label>Catch Skips</label>
+		</div>
+	</div>
+
+	<div class="ui segment inverted controlGroup b-video-effects">
+		<h4 class="ui header">Video Effects</h4>
+
+		<div class="b-splitting-effects">
+			<input type="range" min="1" max="4" step="1" value="1" class="b-splitting-splits">Splits <span
+				class="b-splitting-splits-value">1</span>
+
+			<input type="range" min="0" max="1" step="0.01" value="0.5" class="b-splitting-intensity">Split Intensity <span
+				class="b-splitting-intensity-value">0.5</span>
+
+			<div class="ui checkbox">
+				<input type="checkbox" class="b-splitting-blackscreens"/>
+				<label>Allow blackscreens</label>
+			</div>
+
+			<div class="ui checkbox">
+				<input type="checkbox" class="b-splitting-intensity-sync"/>
+				<label>Sync with Video Volume</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="ui segment inverted controlGroup b-audio-effects">
+		<h4 class="ui header">Audio Effects</h4>
+	</div>
+
+	<div class="ui segment inverted controlGroup b-chat-group">
+		<h4 class="ui header">Chat</h4>
+
+		<div class="ui input">
+			<input type="text" placeholder="Send message" class="b-chat-message"/>
+			<button class="ui button b-chat-send">Send</button>
+		</div>
+
+		<div class="b-chat">
+			<span>Chat log not supported/loaded yet by this worker.</span>
+		</div>
+	</div>
+
+
+</div>
+
+<div class="controlFlex">
+	<div class="ui segment inverted controlGroup">
+		<h4 class="ui header">Custom Media Input</h4>
+
+		<input type="file" accept="video/*,image/*" class="b-file-input"/>
+		<video class="b-input-video" controls></video>
+
+		<div class="b-input-effects">
+			<input type="range" min="0" max="100" step="1" value="1" class="b-gain-control">Gain <span
+				class="b-gain-value">1</span>
+
+			<input type="range" min="0" max="5" step="0.1" value="1" class="b-speed-control">Speed <span
+				class="b-speed-value">1</span>
+		</div>
+	</div>
+
+	<div class="ui segment inverted controlGroup">
+		<h4 class="ui header">IP Sniffer</h4>
+		<div id="workerIpData_{{WORKERID}}"></div>
+	</div>
+</div>
