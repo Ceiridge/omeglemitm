@@ -73,7 +73,10 @@ This is a userscript that can be compiled with webpack.
 
 The architecture can be divided into **workers and controllers**. The controller is executed in the main frame on the target site and displays the entire user interface and interoperates with the workers in the iframes.
 The worker is executed on the actual target site and hooks, intercepts and replaces the media input and performs user actions programmatically.
+
 It is recommended to take a look into `consts.ts`.
+
+Compilation: Clone, `npm ci`, `npm run build` (Node 14)
 
 ## Current Situation
 

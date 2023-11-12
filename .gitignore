@@ -132,6 +132,7 @@ dist
 # More caches
 .awcache/
 .idea/
+.userscripter-temp/
 
 # Custom
 RE/
