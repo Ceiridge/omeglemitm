@@ -10,6 +10,8 @@ export const MEDIA_RECORDER_BITRATE = 750e3;
 
 export const CATCHER_COUNT = 50;
 
+export const SPOOF_IP = "175.45.178.16"; // This is a North Korean ip for ICE candidate ip listeners
+
 export const IS_CONTROL = location.href.endsWith("/robots.txt");
 export type HTMLImageSource = HTMLVideoElement | HTMLCanvasElement | HTMLImageElement;
 
