@@ -24,6 +24,7 @@ This is currently aiming to support *Omegle* and *Ome.Tv* (see below for more in
   - Overlay stranger with person segmentation (TensorflowJS AI model)
   - Add own camera or screen-share media input (e. g. YouTube tab, Snap camera)
   - Ability to change speed, opacity and volume of videos
+  - Picture-in-Picture mode
   - Effects
     - Show Fake Skip Loading Animation
     - Show The Stranger Themselves
@@ -49,6 +50,7 @@ This is currently aiming to support *Omegle* and *Ome.Tv* (see below for more in
       - WahWah
       - Low/High Pitch
       - Monster Effect
+      - Pitch Oscillator
       - Reverb
 - Custom rendering and audio pipelines
 - Ability to intercept more than just 2 strangers in one window
