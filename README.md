@@ -61,7 +61,7 @@ This is currently aiming to support *Omegle* and *Ome.Tv* (see below for more in
 
 Install the userscript from the releases with **TamperMonkey**. This is required for it to work as expected.
 
-It is **required** to go into the TamperMonkey settings, enable expert mode and under *inject mode*, this needs to be changed to *Instant*.
+It is **required** to go into the TamperMonkey settings, enable expert mode and under *inject mode*, this needs to be changed to *Instant*. You will also have to enable the compability options for @require-scripts in the userscript settings (settings menu in the installed userscript).
 
 Because Omegle uses a special way to load their scripts, it is required to keep open the devtools in the Network tab with *Disable cache* enabled until you clicked on start and have waited for 5 seconds. Then they can be closed.
 
@@ -76,7 +76,7 @@ The worker is executed on the actual target site and hooks, intercepts and repla
 
 It is recommended to take a look into `consts.ts`.
 
-Compilation: Clone, `npm ci`, `npm run build` (Node 14)
+Compilation: **Create a GitHub Codespace on this repo** or Clone, `npm ci`, `npm run build` (Node 16 (lts/gallium))
 
 ## Current Situation
 
